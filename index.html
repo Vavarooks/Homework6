@@ -29,7 +29,7 @@
             <div class="form-group col-md-6">
                 <div class="input-group flex-nowrap">
                     <div class="input-group-prepend">
-                        <button class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></button>
+                        <button class="input-group-text" id="addon-wrapping"><i class="fas fa-search" id="look"></i></button>
                     </div>
                     <label for="inputState"></label>
                     <input type="text" class="form-control" id="inputState">
@@ -47,7 +47,23 @@
             </div>
     </form>
 
-    <h3 class="weatherResult"></h3>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                <h1 class="weather-forcast">Weather Forcast</h1>
+            </h1>
+            <h3 class="weatherResult">
+                <div class="city"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
+                <div class="temp"></div>
+            </h3>
+        </div>
+    </div>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
