@@ -1,13 +1,22 @@
-$(document).ready(function(){
-    // Get value on button click and show alert
-    $("#look").click(function(){
-        var userInput = $("#inputState").val();
-        console.log(userInput)
-    });
-});
+
+$(".look").on("click", function(event){
+  event.preventDefault();
+  
+  var weatherInt = $(".inputGroupSelect01").val();
+  var stateInt =  $(".inputState").text();
+  var cityInt = $(".inputCity").text();
+
+  console.log(stateInt);
+  console.log(cityInt)
+  
+  localStorage.setItem(stateInt, cityInt, weatherInt );
+  
+  });
+
+
 var APIKey = "166a433c57516f51dfab1f7edaed8413"
 
-var queryURL = "http://api.openweathermap.org/data/2.5/forecast?id=524901"+ userInput + "&appid=" + APIKey;
+var queryURL = `api.openweathermap.org/data/2.5/forecast/daily?q= ${cityInt}, &cnt= ${weatherInt} &appid=` + APIKey;
 
 $.ajax({
     url: queryURL,
