@@ -1,3 +1,5 @@
+Description: A basic weather app that gathers the weather from the city and state inputed for a weekly forcast.
+
 Where to assess:
 
 https://github.com/Vavarooks/Homework6
