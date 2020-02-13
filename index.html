@@ -8,7 +8,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="Asset/styles.css">
+    <link rel="stylesheet" href="./Asset/styles.css">
     <title>World Weather</title>
 </head>
 
@@ -27,15 +27,6 @@
         <h2 class="weatherSearch">Weather Search</h2>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <h5>State Name:</h5>
-                <div class="input-group flex-nowrap">
-                    <div class="input-group-prepend">
-                        <button class="input-group-text" id="addon-wrapping"><i class="fas fa-search" id="look"></i></button>
-                    </div>
-                    <label for="inputState"></label>
-                    <input type="text" class="form-control" id="inputState">
-                </div>
-            </div>
             <div class="form-group col-md-6">
                 <h5>City Name:</h5>
                 <div class="input-group flex-nowrap">
@@ -53,29 +44,10 @@
         <div class="container">
             <h1 class="display-4">
                 <h1 class="weather-forcast">Weather Forcast</h1>
-                <h5>How many days of the week for the weather forcast?</h5>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                      <option selected>Choose...</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                      <option value="4">Four</option>
-                      <option value="5">Five</option>
-                      <option value="6">Six</option>
-                      <option value="7">Seven</option>
-                    </select>
-                  </div>
             </h1>
-            <h3 class="weatherResult">
-                <div class="city"></div>
-                <div class="wind"></div>
-                <div class="humidity"></div>
-                <div class="temp"></div>
-            </h3>
+            <div id="cityName"> </div>
+            <div class="weatherResult">
+            </div>
         </div>
     </div>
 
@@ -83,9 +55,10 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>

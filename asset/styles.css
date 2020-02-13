@@ -1,3 +1,9 @@
+h3 {
+    border-color:black;
+    border-top: 9px;
+}
+
+
 .userWeather {
     font-family: 'Open Sans', sans-serif;
     font-size: 46px;
