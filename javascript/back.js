@@ -1,5 +1,8 @@
+var cityEl = JSON.parse(localStorage.getItem("data"));
+
 $("#addon-wrapping").on("click", function(event){
   event.preventDefault();
+
   
   var cityInt = $("#inputCity").val();
   city = $(`#inputCity`).text();
@@ -7,8 +10,13 @@ $("#addon-wrapping").on("click", function(event){
   console.log(cityInt);
   console.log(city);
 
-  localStorage.setItem(cityInt, city);  
-  
+  const cityShow = {
+    cityInt,
+    city,
+  }
+
+  localStorage.setItem(`data`, JSON.stringify(cityShow));
+
   // localStorage.setItem( cityInt);
   
   var APIKey = "166a433c57516f51dfab1f7edaed8413"
