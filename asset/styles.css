@@ -3,7 +3,6 @@ h3 {
     border-top: 9px;
 }
 
-
 .userWeather {
     font-family: 'Open Sans', sans-serif;
     font-size: 46px;
@@ -38,4 +37,18 @@ h3 {
     text-align: center;
     border-radius: 15px;
     padding: 1px ;
+}
+
+#cityName {
+    font-size: 26px;
+}
+
+#weatherReport {
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 40px;
+    align-items: center;
+
 }

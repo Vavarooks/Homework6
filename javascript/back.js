@@ -1,9 +1,9 @@
 var cityEl = JSON.parse(localStorage.getItem("weatherSearch"))||[];
 
 if (cityEl.length > 0 ){
-  $("#pastCity").append(`<h6> Previous Search </h6> <ul>`)
+  $("#pastCity").append(`<br> <h5> Previous Search: </h5> <ul>`)
   for (let i = 0 ; i < cityEl.length ; i ++){
-    $("#pastCity").append(`<button class="pastSearch"> ${cityEl[i]} </button>`)
+    $("#pastCity").append(`<button class="pastSearch btn-dark"> ${cityEl[i]} </button>`)
   }
   $("#pastCity").append(`</ul>`)
 }
@@ -41,7 +41,7 @@ $("#addon-wrapping").on("click", function (event) {
 
       console.log(response.list[i]);
 
-      $(".weatherResult").append(` <div class="weatherStuff card" style="width: 25rem;" > <h3> Date ${response.list[i].dt_txt.split(" ")[0]} </h3> <h3> The temputure ${response.list[i].main.temp} </h3> 
+      $(".weatherResult").append(` <div class="weatherStuff card col" style="width: 25rem;" id="weatherReport"> <h3> Date ${response.list[i].dt_txt.split(" ")[0]} </h3> <h3> The temputure ${response.list[i].main.temp} </h3> 
 <h3>  ${response.list[i].weather[0].main} </h3> <img src= "https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}.png" class="card-img-top" >
 <h3> The wind speeed ${response.list[i].wind.speed} Mph </h3> <h3> The humidity ${response.list[i].main.humidity} % </h3> </div>`)
 
@@ -110,7 +110,7 @@ $("#pastCity").on('click', '.pastSearch', function(event){
 
       console.log(response.list[i]);
 
-      $(".weatherResult").append(` <div class="weatherStuff card" style="width: 25rem;" > <h3> Date ${response.list[i].dt_txt.split(" ")[0]} </h3> <h3> The temputure ${response.list[i].main.temp} </h3> 
+      $(".weatherResult").append(` <div class="weatherStuff card col-sm" style="width: 25rem;" id="weatherReport"> <h3> Date ${response.list[i].dt_txt.split(" ")[0]} </h3> <h3> The temputure ${response.list[i].main.temp} </h3> 
 <h3>  ${response.list[i].weather[0].main} </h3> <img src= "https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}.png" class="card-img-top" >
 <h3> The wind speeed ${response.list[i].wind.speed} Mph </h3> <h3> The humidity ${response.list[i].main.humidity} % </h3> </div>`)
 
