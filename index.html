@@ -25,39 +25,47 @@
 
     <form>
         <h2 class="weatherSearch">Weather Search</h2>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-            <div class="form-group col-md-6">
-                <h5>City Name:</h5>
-                <div class="input-group flex-nowrap">
-                    <div class="input-group-prepend">
-                        <button class="input-group-text" id="addon-wrapping"><i class="fas fa-search" id="look"></i></button>
+               <div class="container">
+                   <div class="row">
+                       <div class ="col-md-6">
+                        <h5>City Name:</h5>
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <button class="input-group-text" id="addon-wrapping"><i class="fas fa-search" id="look"></i></button>
+                            </div>
+                            <label for="inputState"></label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                       </div>
+                       <div class ="col-md-8" id="pastCity">
                     </div>
-                    <label for="inputState"></label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-     
-            </div>
-        </div>
+                   </div>
+               </div>
     </form>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid"> 
         <div class="container">
-            <h1 class="display-4">
-                <h1 class="weather-forcast">Weather Forcast</h1>
-            </h1>
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="col-fluid">
-                    <div id="cityName">
-                    </div>
-                    <div class="weatherResult">
-                    </div>
-                  </div>
+            <div class="row">
+                <div class="col-md-4" id="currentW">
                 </div>
-              </div>
-        </div>
-    </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">
+                        <h1 class="weather-forcast">Weather Forcast</h1>
+                    </h1>
+                    <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-fluid">
+                            <div id="cityName">
+                            </div>
+                            <div class="weatherResult">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+                </div>
+            </div>
 
 
 
