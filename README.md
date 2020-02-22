@@ -1,4 +1,4 @@
-Description: A basic weather app that gathers the weather from the city and state inputed for a weekly forcast.
+Description: A basic weather app that gathers the weather from the city and state inputed for a weekly forcast. It also obtains the UV index and shows current weather for the day. There are also functions to get to the past search results.
 
 Where to assess:
 
