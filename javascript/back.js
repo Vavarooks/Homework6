@@ -41,9 +41,9 @@ $("#addon-wrapping").on("click", function (event) {
 
       console.log(response.list[i]);
 
-      $(".weatherResult").append(` <div class="weatherStuff card col" style="width: 25rem;" id="weatherReport"> <h3> Date ${response.list[i].dt_txt.split(" ")[0]} </h3> <h3> The temputure ${response.list[i].main.temp} </h3> 
+      $(".weatherResult").append(` <div class="weatherStuff card" style="width: 25rem;" id="weatherReport"> <div class="col-sm-5"> <h3> Date ${response.list[i].dt_txt.split(" ")[0]} </h3> <h3> The temputure ${response.list[i].main.temp} </h3> 
 <h3>  ${response.list[i].weather[0].main} </h3> <img src= "https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}.png" class="card-img-top" >
-<h3> The wind speeed ${response.list[i].wind.speed} Mph </h3> <h3> The humidity ${response.list[i].main.humidity} % </h3> </div>`)
+<h3> The wind speeed ${response.list[i].wind.speed} Mph </h3> <h3> The humidity ${response.list[i].main.humidity} % </h3> </div> </div>`)
 
     }
 
