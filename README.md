@@ -4,7 +4,7 @@ Where to assess:
 
 https://github.com/Vavarooks/Homework6
 
-https://vavarooks.github.io/Homework6/index.html
+https://vavarooks.github.io/Homework6/
 
 
 Contains: HTML, Javascript, and Css
